@@ -65,11 +65,8 @@
     background:rgba(10,12,9,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
   }
   nav.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute)}
-  .brand b{
-    font-family:var(--display);font-size:1.15rem;letter-spacing:.02em;color:#08110A;
-    background:var(--green);width:30px;height:30px;display:grid;place-items:center;border-radius:5px;
-  }
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand img{height:42px;width:42px;object-fit:contain;border-radius:8px;border:1px solid var(--line)}
   .navlinks{display:flex;gap:26px;font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
   .navlinks a{color:var(--ink-mute)}
   .navlinks a:hover{color:var(--green)}
@@ -185,7 +182,7 @@
 
 <nav class="bar">
   <div class="wrap">
-    <div class="brand"><b>HV</b> Tennis Academy</div>
+    <a class="brand" href="#" aria-label="HV Tennis Academy — inicio"><img src="img/logo.jpg" alt="HV Tennis Academy"></a>
     <div class="navlinks">
       <a href="#metodo">Método</a>
       <a href="#analisis">Análisis</a>
@@ -269,7 +266,7 @@
           <rect x="300" y="236" width="128" height="44" rx="6" fill="#141A10" stroke="#2A3322"/>
           <text x="310" y="252" fill="#98A38F" font-size="7">RODILLA</text>
           <text x="310" y="272" fill="#37DE2B" font-family="Anton, sans-serif" font-size="16">172°</text>
-          <text x="352" y="272" fill="#98A38F" font-size="7">carga</text>
+          <text x="352" y="272" fill="#98A38F" font-size="7">flexión</text>
         </g>
       </svg>
     </div>
@@ -334,9 +331,14 @@
           <text x="282" y="28" fill="#98A38F" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="end">swing #04</text>
         </svg>
       </div>
-      <figcaption style="font-family:var(--mono);font-size:.68rem;color:var(--ink-mute);margin-top:9px;text-align:center;letter-spacing:.06em">Ejemplo · derecha · fotograma de contacto</figcaption>
+      <figcaption style="font-family:var(--mono);font-size:.68rem;color:var(--ink-mute);margin-top:9px;text-align:center;letter-spacing:.06em">Esquema · recorrido de raqueta y fotograma de contacto</figcaption>
     </figure>
   </div>
+
+  <figure style="margin:34px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px">
+    <img src="img/tool-resumen.jpg" alt="Captura real de la herramienta de análisis en el iPad: resumen de sesión con métricas pico (rotación, torsión, codo, rodilla) y opción de generar el reporte en PDF" loading="lazy" style="border-radius:8px;width:100%">
+    <figcaption style="font-family:var(--mono);font-size:.7rem;color:var(--ink-mute);margin-top:10px;text-align:center;letter-spacing:.05em">Captura real · resumen de sesión y reporte PDF en el iPad</figcaption>
+  </figure>
 
   <div style="margin-top:44px">
     <div class="track-label">Formatos de análisis</div>
@@ -408,8 +410,9 @@
   <span class="eyebrow">Tu entrenador</span>
   <h2>Certificación ITF y método en video</h2>
   <div class="coach">
-    <div class="ph">FOTO<br>DEL COACH</div>
+    <div class="ph">FOTO<br>DE BRYAN</div>
     <div>
+      <h3 style="font-size:1.5rem;margin-bottom:6px">Bryan Vizuete</h3>
       <p>Entrenador de tenis certificado <b>ITF Nivel 2</b>. Alumnos desde principiantes hasta nivel de competencia. Trabajo uno a uno, en tu cancha, con análisis en video para que cada corrección se vea, no solo se escuche.</p>
       <div class="chips"><span>ITF Nivel 2</span><span>Clases 1 a 1</span><span>Análisis en video</span><span>Unidad móvil</span></div>
     </div>
@@ -454,11 +457,12 @@
 
 <footer>
   <div class="wrap">
+    <img src="img/logo.jpg" alt="HV Tennis Academy" style="height:58px;width:58px;object-fit:contain;border-radius:10px;margin:0 auto 16px;display:block">
     <div class="links">
       <a href="https://instagram.com/hvte.nnis" target="_blank" rel="noopener">Instagram @hvte.nnis</a>
       <a href="https://tiktok.com/@hv_tenis_oficial" target="_blank" rel="noopener">TikTok @hv_tenis_oficial</a>
     </div>
-    <div class="fine">HV Tennis Academy · Quito – Cumbayá · Ecuador</div>
+    <div class="fine">HV Tennis Academy · Bryan Vizuete · Coach ITF Nivel 2 · Quito – Cumbayá</div>
   </div>
 </footer>
 
