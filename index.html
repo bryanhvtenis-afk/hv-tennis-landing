@@ -148,11 +148,11 @@
   .addon b{color:var(--ink)}
 
   /* coach */
-  .coach{display:grid;grid-template-columns:130px 1fr;gap:24px;align-items:center;margin-top:10px}
-  .coach .ph{width:130px;height:130px;border-radius:12px;background:var(--surface-2);border:1px dashed var(--line);display:grid;place-items:center;text-align:center;font-family:var(--mono);font-size:.62rem;color:var(--ink-mute);letter-spacing:.08em;padding:10px}
+  .coach{display:grid;grid-template-columns:156px 1fr;gap:26px;align-items:center;margin-top:10px}
+  .coach .ph{width:156px;height:195px;border-radius:12px;border:1px solid var(--line);object-fit:cover;object-position:center 20%}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
   .chips span{font-family:var(--mono);font-size:.7rem;padding:6px 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.05em}
-  @media (max-width:560px){.coach{grid-template-columns:1fr}.coach .ph{width:100%;height:104px}}
+  @media (max-width:560px){.coach{grid-template-columns:1fr;justify-items:start}.coach .ph{width:180px;height:225px}}
 
   /* gallery */
   .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
@@ -349,7 +349,7 @@
   <span class="eyebrow">Tu entrenador</span>
   <h2>Certificación ITF y método en video</h2>
   <div class="coach">
-    <div class="ph">FOTO<br>DE BRYAN</div>
+    <img class="ph" src="img/bryan.jpg" alt="Bryan Vizuete, entrenador de tenis certificado ITF Nivel 2" loading="lazy">
     <div>
       <h3 style="font-size:1.5rem;margin-bottom:6px">Bryan Vizuete</h3>
       <p>Entrenador de tenis certificado <b>ITF Nivel 2</b>. Alumnos desde principiantes hasta nivel de competencia. Trabajo uno a uno, en tu cancha, con análisis en video para que cada corrección se vea, no solo se escuche.</p>
