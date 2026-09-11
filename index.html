@@ -201,6 +201,11 @@
   .lightbox img{max-width:min(92vw,1100px);max-height:88vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
   .lightbox-close{position:absolute;top:20px;right:22px;background:var(--surface);border:1px solid var(--line);color:var(--ink);width:42px;height:42px;border-radius:50%;font-size:1.3rem;line-height:1;cursor:pointer}
 
+  /* testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px;max-width:520px}
+  .testi{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#000}
+  .testi video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+
   .zonewrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
   .zonewrap span{font-size:.9rem;font-weight:500;padding:9px 15px;border-radius:6px;background:var(--surface);border:1px solid var(--line)}
 
@@ -235,6 +240,7 @@
       <a href="#analisis">Análisis</a>
       <a href="#clases">Clases</a>
       <a href="#galeria">Galería</a>
+      <a href="#testimonios">Testimonios</a>
     </div>
     <div class="navright">
       <a class="btn btn-primary wa" href="#" data-msg="Hola, quiero información sobre HV Tennis Academy.">WhatsApp</a>
@@ -248,6 +254,7 @@
     <a href="#analisis">Análisis</a>
     <a href="#clases">Clases</a>
     <a href="#galeria">Galería</a>
+    <a href="#testimonios">Testimonios</a>
     <a class="btn btn-primary wa" href="#" data-msg="Hola, quiero información sobre HV Tennis Academy.">Escribir por WhatsApp</a>
   </div>
 </nav>
@@ -314,9 +321,9 @@
     </div>
     <figure style="margin:0">
       <div class="scope">
-        <img src="img/tool-analisis.png" alt="Herramienta HV analizando la fase de armado del saque, con el recorrido de la raqueta y los ángulos del brazo" style="border-radius:8px;width:100%;display:block">
+        <video src="img/demo-lab.mp4" poster="img/demo-lab-poster.jpg" autoplay muted loop playsinline style="border-radius:8px;width:100%;display:block" aria-label="Video real del LAB midiendo ángulos de codo, rodilla y torsión con gráfico en vivo durante un golpe"></video>
       </div>
-      <figcaption style="font-family:var(--mono);font-size:.68rem;color:var(--ink-mute);margin-top:9px;text-align:center;letter-spacing:.06em">Esquema · recorrido de raqueta y fotograma de contacto</figcaption>
+      <figcaption style="font-family:var(--mono);font-size:.68rem;color:var(--ink-mute);margin-top:9px;text-align:center;letter-spacing:.06em">Video real · el LAB midiendo tu golpe en vivo</figcaption>
     </figure>
   </div>
 
@@ -399,6 +406,24 @@
     <figure class="reveal" data-lightbox><img src="img/clase-1.jpg" alt="Alumna adulta ejecutando una derecha en una cancha particular del valle de Quito" loading="lazy"></figure>
     <figure class="reveal reveal2" data-lightbox><img src="img/clase-2.jpg" alt="Alumno adulto en posición de espera durante una clase privada" loading="lazy"></figure>
     <figure class="reveal reveal3" data-lightbox><img src="img/clase-3.jpg" alt="Alumna adulta golpeando una derecha con la bola en el aire" loading="lazy"></figure>
+  </div>
+</section>
+
+<section id="testimonios" class="col">
+  <span class="eyebrow">Lo que dicen mis alumnas</span>
+  <h2>En sus palabras, no en las mías</h2>
+  <p>Clips reales grabados en cancha, sin guion.</p>
+  <div class="testi-grid">
+    <figure class="testi reveal">
+      <video controls preload="none" poster="img/testimonio-1-poster.jpg" playsinline>
+        <source src="img/testimonio-1.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <figure class="testi reveal reveal2">
+      <video controls preload="none" poster="img/testimonio-2-poster.jpg" playsinline>
+        <source src="img/testimonio-2.mp4" type="video/mp4">
+      </video>
+    </figure>
   </div>
 </section>
 
